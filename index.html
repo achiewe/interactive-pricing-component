@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <title>
+    interactive pricing component page
+  </title>
+</head>
+
+<body>
+  <header class="header-div">
+    <h2 class="title">
+      Simple, traffic-based pricing
+    </h2>
+    <p>
+      Sign-up for our 30-day trial. <br>
+      No credit card required.
+    </p>
+  </header>
+
+  <main class="main-card">
+    <div class="calculate-div">
+      <h3 id="view-headtitle">
+        100K PAGEVIEWS
+      </h3>
+      <div id="month-price">
+        <label id="bt-range" for="slider"> </label>
+        <input id="slider" class="slider-range" type="range" min="1" max="5" step="1">
+      </div>
+      <h3 id="price-monyear">
+        $16.00 <span id="mon-year"> / month</span>
+      </h3>
+    </div>
+    <div class="switch-container">
+      <span class="span-monthly"> Monthly Billing </span>
+      <label class="switch">
+        <input id="toggle-switch" class="toggle" type="checkbox" min="0" max="1" name="toggle-switch">
+        <span id="slide"> </span>
+      </label>
+      <span class="span-year"> Yearly Billing </span>
+    </div>
+    <hr>
+    <div class="offer-button">
+      <div class="offer-div">
+        <div class="check-offer">
+          <img src="./images/icon-check.svg">
+          <h3>
+            Unlimited websites
+          </h3>
+        </div>
+        <div class="check-offer">
+          <img src="./images/icon-check.svg">
+          <h3>
+            100% data ownership
+          </h3>
+        </div>
+        <div class="check-offer">
+          <img src="./images/icon-check.svg">
+          <h3>
+            Email reports
+          </h3>
+        </div>
+      </div>
+      <button class="trial-button">
+        Start my trial
+      </button>
+    </div>
+  </main>
+
+  <script src="./script.js"> </script>
+</body>
+
+</html>
