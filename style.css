@@ -99,17 +99,16 @@ body{
     gap:24px;
 } 
 
-.slider-range{
+.slider-range {
     appearance: none;
     width: 279px;
     height: 8px;
     border-radius: 5px;
-    background: var(--light-blue);
+    background:linear-gradient(90deg, var(--light-blue) 50.00%, var(--light-grey) 25.00%);
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
     transition: opacity .2s;
-}
+  }  
 
 .slider-range[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none; 
@@ -125,6 +124,13 @@ body{
     box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
 }
 
+.monyear-count{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 #price-monyear{
     display: flex;
     justify-content: center;
@@ -138,7 +144,21 @@ body{
     color:var(--dark-blue);
 }
 
-#mon-year{
+#mon-mon{
+    width:72px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-left:10px;
+    color:var(--grey);
+}
+
+#year-year{
+    width:56px;
+    display: none;
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -407,7 +427,6 @@ hr{
         width:444px;
         position:absolute;
         top:95px;
-        right:43px;
     }
 
     .slider-range{
@@ -415,10 +434,10 @@ hr{
         width: 444px;
         height: 8px;
         border-radius: 5px;
-        background: linear-gradient(90deg, #A4F3EB 25.00%, #ECF0FB 25.00%);
+        background: linear-gradient(90deg, var(--light-blue) 50.00%, var(--light-grey) 25.00%);
         outline: none;
         opacity: 0.7;
-        -webkit-transition: .2s;
+        transition: .2s;
         transition: opacity .2s;
         appearance: none;
         cursor:pointer;
@@ -433,7 +452,16 @@ hr{
         text-align: right;
     }
 
-    #mon-year{
+    #mon-mon{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    #year-year{
+        display:none;
         font-size: 16px;
         font-weight: 600;
         line-height: 22px;
